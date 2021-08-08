@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8B26BFB669006E9819 /* FollowerListVC.swift */; };
 		15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5726B9635400BF657A /* AppDelegate.swift */; };
 		15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5926B9635400BF657A /* SceneDelegate.swift */; };
 		15C6EA6126B9635700BF657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C6EA6026B9635700BF657A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15A08C8B26BFB669006E9819 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		15C6EA5426B9635400BF657A /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C6EA5726B9635400BF657A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C6EA5926B9635400BF657A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				15C6EA6F26BC908F00BF657A /* BKButton.swift */,
 				15C6EA7126BD3B4500BF657A /* BKTextField.swift */,
 				15C6EA6B26BC76FB00BF657A /* SearchVC.swift */,
+				15A08C8B26BFB669006E9819 /* FollowerListVC.swift */,
 				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
 				15C6EA6026B9635700BF657A /* Assets.xcassets */,
 				15C6EA6226B9635700BF657A /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 				15C6EA7026BC908F00BF657A /* BKButton.swift in Sources */,
 				15C6EA6C26BC76FB00BF657A /* SearchVC.swift in Sources */,
 				15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */,
+				15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */,
 				15C6EA6E26BC775F00BF657A /* FavoritesListVC.swift in Sources */,
 				15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */,
 			);
