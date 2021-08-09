@@ -53,6 +53,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15A08C9726C11823006E9819 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15C6EA6B26BC76FB00BF657A /* SearchVC.swift */,
+				15A08C8B26BFB669006E9819 /* FollowerListVC.swift */,
+				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		15A08C9826C11885006E9819 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A08C9326C0AE5C006E9819 /* BKAlertContainerView.swift */,
+				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
+				15C6EA6F26BC908F00BF657A /* BKButton.swift */,
+				15C6EA7126BD3B4500BF657A /* BKTextField.swift */,
+				15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */,
+				15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		15A08C9926C118D0006E9819 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				15A08C9526C0F7AA006E9819 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15A08C9A26C1194A006E9819 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				15C6EA5726B9635400BF657A /* AppDelegate.swift */,
+				15C6EA5926B9635400BF657A /* SceneDelegate.swift */,
+				15C6EA6026B9635700BF657A /* Assets.xcassets */,
+				15C6EA6226B9635700BF657A /* LaunchScreen.storyboard */,
+				15C6EA6526B9635700BF657A /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		15C6EA4B26B9635400BF657A = {
 			isa = PBXGroup;
 			children = (
@@ -72,21 +115,10 @@
 		15C6EA5626B9635400BF657A /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
-				15C6EA5726B9635400BF657A /* AppDelegate.swift */,
-				15C6EA5926B9635400BF657A /* SceneDelegate.swift */,
-				15C6EA6F26BC908F00BF657A /* BKButton.swift */,
-				15C6EA7126BD3B4500BF657A /* BKTextField.swift */,
-				15C6EA6B26BC76FB00BF657A /* SearchVC.swift */,
-				15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */,
-				15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */,
-				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
-				15A08C9526C0F7AA006E9819 /* UIViewController+Ext.swift */,
-				15A08C9326C0AE5C006E9819 /* BKAlertContainerView.swift */,
-				15A08C8B26BFB669006E9819 /* FollowerListVC.swift */,
-				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
-				15C6EA6026B9635700BF657A /* Assets.xcassets */,
-				15C6EA6226B9635700BF657A /* LaunchScreen.storyboard */,
-				15C6EA6526B9635700BF657A /* Info.plist */,
+				15A08C9926C118D0006E9819 /* Extensions */,
+				15A08C9826C11885006E9819 /* Custom Views */,
+				15A08C9726C11823006E9819 /* Controllers */,
+				15A08C9A26C1194A006E9819 /* Support */,
 			);
 			path = GithubFollowers;
 			sourceTree = "<group>";
