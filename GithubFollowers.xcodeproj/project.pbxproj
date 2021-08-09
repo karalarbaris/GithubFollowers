@@ -95,7 +95,6 @@
 				15C6EA5926B9635400BF657A /* SceneDelegate.swift */,
 				15C6EA6026B9635700BF657A /* Assets.xcassets */,
 				15C6EA6226B9635700BF657A /* LaunchScreen.storyboard */,
-				15C6EA6526B9635700BF657A /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -128,6 +127,7 @@
 		15C6EA5626B9635400BF657A /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				15C6EA6526B9635700BF657A /* Info.plist */,
 				15A08C9B26C16F58006E9819 /* Model */,
 				15A08C9926C118D0006E9819 /* Extensions */,
 				15A08C9826C11885006E9819 /* Custom Views */,
