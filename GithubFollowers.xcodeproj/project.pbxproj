@@ -15,6 +15,7 @@
 		15A08C9626C0F7AA006E9819 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C9526C0F7AA006E9819 /* UIViewController+Ext.swift */; };
 		15A08C9D26C16F68006E9819 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C9C26C16F68006E9819 /* Follower.swift */; };
 		15A08C9F26C17072006E9819 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C9E26C17072006E9819 /* User.swift */; };
+		15A08CA226C2801F006E9819 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08CA126C2801F006E9819 /* NetworkManager.swift */; };
 		15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5726B9635400BF657A /* AppDelegate.swift */; };
 		15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5926B9635400BF657A /* SceneDelegate.swift */; };
 		15C6EA6126B9635700BF657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C6EA6026B9635700BF657A /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		15A08C9526C0F7AA006E9819 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		15A08C9C26C16F68006E9819 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		15A08C9E26C17072006E9819 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		15A08CA126C2801F006E9819 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		15C6EA5426B9635400BF657A /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C6EA5726B9635400BF657A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C6EA5926B9635400BF657A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +110,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		15A08CA026C2800E006E9819 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				15A08CA126C2801F006E9819 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		15C6EA4B26B9635400BF657A = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 		15C6EA5626B9635400BF657A /* GithubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				15A08CA026C2800E006E9819 /* Managers */,
 				15C6EA6526B9635700BF657A /* Info.plist */,
 				15A08C9B26C16F58006E9819 /* Model */,
 				15A08C9926C118D0006E9819 /* Extensions */,
@@ -218,6 +229,7 @@
 				15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */,
 				15A08C8E26BFD296006E9819 /* BKTitleLabel.swift in Sources */,
 				15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */,
+				15A08CA226C2801F006E9819 /* NetworkManager.swift in Sources */,
 				15C6EA6E26BC775F00BF657A /* FavoritesListVC.swift in Sources */,
 				15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */,
 			);

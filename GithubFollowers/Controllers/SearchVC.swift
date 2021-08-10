@@ -29,6 +29,7 @@ class SearchVC: UIViewController {
         configureUsernameTextField()
         configureCallToActionButton()
         createDismissKeyboardTapGesture()
+        usernameTextField.text = "SAllen0400"
     }
 
     override func viewWillAppear(_ animated: Bool) {
