@@ -8,7 +8,7 @@
 import UIKit
 
 class FollowerListVC: UIViewController {
-
+    
     enum Section {
         case main
     }
@@ -28,7 +28,7 @@ class FollowerListVC: UIViewController {
         getFollowers(username: username, page: page)
         configureDataSource()
     }
-
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -56,7 +56,7 @@ class FollowerListVC: UIViewController {
         NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }            
             self.dismissLoadingView()
-
+            
             switch result {
             case .success(let followers):
                 if followers.count < 100 {
@@ -64,6 +64,13 @@ class FollowerListVC: UIViewController {
                 }
                 
                 self.followers.append(contentsOf: followers)
+                if self.followers.isEmpty {
+                    DispatchQueue.main.async {
+                        self.showEmptyStateView(with: "This username has no followers!", in: self.view)
+                        return
+                    }
+                }
+                
                 self.updateData()
                 
             case .failure(let error):
@@ -78,7 +85,7 @@ class FollowerListVC: UIViewController {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FollowerCell.reuseID, for: indexPath) as! FollowerCell
             cell.set(follower: follower)
             //or
-//            cell.usernameLabel.text = follower.login
+            //            cell.usernameLabel.text = follower.login
             return cell
         })
     }
@@ -89,7 +96,7 @@ class FollowerListVC: UIViewController {
         snapshot.appendSections([Section.main])
         snapshot.appendItems(followers)
         dataSource.apply(snapshot, animatingDifferences: true, completion: nil)
-
+        
     }
     
     
@@ -112,7 +119,7 @@ extension FollowerListVC: UICollectionViewDelegate {
             page += 1
             getFollowers(username: username, page: page)
         }
-
+        
     }
     
 }

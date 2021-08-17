@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152BBB3C26CBE74D0097E4E1 /* BKEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */; };
 		15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8B26BFB669006E9819 /* FollowerListVC.swift */; };
 		15A08C8E26BFD296006E9819 /* BKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */; };
 		15A08C9026BFD545006E9819 /* BKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKEmptyStateView.swift; sourceTree = "<group>"; };
 		15A08C8B26BFB669006E9819 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTitleLabel.swift; sourceTree = "<group>"; };
 		15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKBodyLabel.swift; sourceTree = "<group>"; };
@@ -67,6 +69,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152BBB3526CBE61A0097E4E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15A08C9326C0AE5C006E9819 /* BKAlertContainerView.swift */,
+				152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		152BBB3626CBE6200097E4E1 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				15C6EA6F26BC908F00BF657A /* BKButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		152BBB3726CBE6240097E4E1 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				15C6EA7126BD3B4500BF657A /* BKTextField.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		152BBB3826CBE63A0097E4E1 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				15A08CA926C57D57006E9819 /* BKAvatarImageView.swift */,
+			);
+			path = ImageViews;
+			sourceTree = "<group>";
+		};
+		152BBB3926CBE6420097E4E1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		152BBB3A26CBE6770097E4E1 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */,
+				15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		15A08C9726C11823006E9819 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,14 +132,13 @@
 		15A08C9826C11885006E9819 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				152BBB3A26CBE6770097E4E1 /* Labels */,
+				152BBB3926CBE6420097E4E1 /* ViewControllers */,
+				152BBB3826CBE63A0097E4E1 /* ImageViews */,
+				152BBB3726CBE6240097E4E1 /* TextFields */,
+				152BBB3626CBE6200097E4E1 /* Buttons */,
+				152BBB3526CBE61A0097E4E1 /* Views */,
 				15A08CA626C57B71006E9819 /* Cells */,
-				15A08C9326C0AE5C006E9819 /* BKAlertContainerView.swift */,
-				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
-				15C6EA6F26BC908F00BF657A /* BKButton.swift */,
-				15C6EA7126BD3B4500BF657A /* BKTextField.swift */,
-				15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */,
-				15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */,
-				15A08CA926C57D57006E9819 /* BKAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -246,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15A08C9226C0A786006E9819 /* BKAlertVC.swift in Sources */,
+				152BBB3C26CBE74D0097E4E1 /* BKEmptyStateView.swift in Sources */,
 				15A08C9026BFD545006E9819 /* BKBodyLabel.swift in Sources */,
 				15A08C9626C0F7AA006E9819 /* UIViewController+Ext.swift in Sources */,
 				15A08C9426C0AE5C006E9819 /* BKAlertContainerView.swift in Sources */,
