@@ -126,8 +126,8 @@
 			children = (
 				15C6EA6B26BC76FB00BF657A /* SearchVC.swift */,
 				15A08C8B26BFB669006E9819 /* FollowerListVC.swift */,
-				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
 				156A44E026D0454500CAD514 /* UserInfoVC.swift */,
+				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
