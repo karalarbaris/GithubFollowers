@@ -12,6 +12,7 @@
 		156A44E326D1510200CAD514 /* BKUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */; };
 		156A44E526D1527400CAD514 /* BKSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */; };
 		156A44E726D16B0000CAD514 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E626D16B0000CAD514 /* Constants.swift */; };
+		156A44E926D44AE400CAD514 /* BKItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E826D44AE400CAD514 /* BKItemInfoView.swift */; };
 		15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8B26BFB669006E9819 /* FollowerListVC.swift */; };
 		15A08C8E26BFD296006E9819 /* BKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */; };
 		15A08C9026BFD545006E9819 /* BKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */; };
@@ -41,6 +42,7 @@
 		156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		156A44E626D16B0000CAD514 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		156A44E826D44AE400CAD514 /* BKItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKItemInfoView.swift; sourceTree = "<group>"; };
 		15A08C8B26BFB669006E9819 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTitleLabel.swift; sourceTree = "<group>"; };
 		15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKBodyLabel.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				15A08C9326C0AE5C006E9819 /* BKAlertContainerView.swift */,
 				152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */,
+				156A44E826D44AE400CAD514 /* BKItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				15C6EA6C26BC76FB00BF657A /* SearchVC.swift in Sources */,
 				156A44E126D0454500CAD514 /* UserInfoVC.swift in Sources */,
 				15A08C9D26C16F68006E9819 /* Follower.swift in Sources */,
+				156A44E926D44AE400CAD514 /* BKItemInfoView.swift in Sources */,
 				15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */,
 				156A44E526D1527400CAD514 /* BKSecondaryTitleLabel.swift in Sources */,
 				15A08C8E26BFD296006E9819 /* BKTitleLabel.swift in Sources */,
