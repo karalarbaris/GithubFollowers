@@ -10,24 +10,29 @@ import UIKit
 class UserInfoVC: UIViewController {
 
     let headerView = UIView()
+    let itemViewOne = UIView()
+    let itemViewTwo = UIView()
+    var itemViews : [UIView] = []
+    
+    
     var username : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-        navigationItem.rightBarButtonItem = doneButton
         
+        configureVC()
         layoutUI()
-
         getUserInfo(username: username)
         
     }
     
-    @objc func dismissVC() {
-        dismiss(animated: true, completion: nil)
+    
+    func configureVC() {
+        view.backgroundColor = .systemBackground
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
+        navigationItem.rightBarButtonItem = doneButton
     }
+    
     
     func getUserInfo(username: String) {
         showLoadingView()
@@ -50,17 +55,40 @@ class UserInfoVC: UIViewController {
     
     
     private func layoutUI() {
-        view.addSubview(headerView)
-        headerView.translatesAutoresizingMaskIntoConstraints = false
-                
-        NSLayoutConstraint.activate([
-            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180)
+        itemViews = [headerView, itemViewOne, itemViewTwo]
+        
+        let padding : CGFloat = 20
+        let itemHeight: CGFloat = 140
+        
+        for itemView in itemViews {
+            view.addSubview(itemView)
+            itemView.translatesAutoresizingMaskIntoConstraints = false
+            
+        }
 
+        itemViewOne.backgroundColor = .systemPink
+        itemViewTwo.backgroundColor = .systemBlue
+
+        NSLayoutConstraint.activate([
+            headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerView.heightAnchor.constraint(equalToConstant: 180),
+
+            itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
+            itemViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemViewOne.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemViewOne.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
+            itemViewTwo.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+            itemViewTwo.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+            itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            
         ])
     }
+    
     
     private func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
@@ -69,5 +97,9 @@ class UserInfoVC: UIViewController {
         childVC.didMove(toParent: self)
     }
 
+    
+    @objc func dismissVC() {
+        dismiss(animated: true, completion: nil)
+    }
     
 }
