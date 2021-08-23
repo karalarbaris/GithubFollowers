@@ -13,6 +13,7 @@
 		156A44E526D1527400CAD514 /* BKSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */; };
 		156A44E726D16B0000CAD514 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E626D16B0000CAD514 /* Constants.swift */; };
 		156A44E926D44AE400CAD514 /* BKItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E826D44AE400CAD514 /* BKItemInfoView.swift */; };
+		156A44EB26D4544400CAD514 /* BKItemInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44EA26D4544400CAD514 /* BKItemInfoVC.swift */; };
 		15A08C8C26BFB669006E9819 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8B26BFB669006E9819 /* FollowerListVC.swift */; };
 		15A08C8E26BFD296006E9819 /* BKTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */; };
 		15A08C9026BFD545006E9819 /* BKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */; };
@@ -43,6 +44,7 @@
 		156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		156A44E626D16B0000CAD514 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		156A44E826D44AE400CAD514 /* BKItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKItemInfoView.swift; sourceTree = "<group>"; };
+		156A44EA26D4544400CAD514 /* BKItemInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKItemInfoVC.swift; sourceTree = "<group>"; };
 		15A08C8B26BFB669006E9819 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		15A08C8D26BFD296006E9819 /* BKTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTitleLabel.swift; sourceTree = "<group>"; };
 		15A08C8F26BFD545006E9819 /* BKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKBodyLabel.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
 				156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */,
+				156A44EA26D4544400CAD514 /* BKItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				15A08CA526C47903006E9819 /* BKError.swift in Sources */,
 				15A08CAC26C66CC7006E9819 /* UIHelper.swift in Sources */,
 				15A08CA226C2801F006E9819 /* NetworkManager.swift in Sources */,
+				156A44EB26D4544400CAD514 /* BKItemInfoVC.swift in Sources */,
 				15C6EA6E26BC775F00BF657A /* FavoritesListVC.swift in Sources */,
 				15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */,
 				156A44E726D16B0000CAD514 /* Constants.swift in Sources */,
