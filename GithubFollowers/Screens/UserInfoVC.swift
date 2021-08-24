@@ -44,6 +44,8 @@ class UserInfoVC: UIViewController {
             case .success(let user):
                 DispatchQueue.main.async {
                     self.add(childVC: BKUserInfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: BKRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: BKFollowerItemVC(user: user), to: self.itemViewTwo)
                 }
                 
             case .failure(let error):
@@ -66,8 +68,6 @@ class UserInfoVC: UIViewController {
             
         }
 
-        itemViewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemBlue
 
         NSLayoutConstraint.activate([
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),

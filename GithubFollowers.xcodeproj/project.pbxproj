@@ -27,6 +27,8 @@
 		15A08CA826C57B99006E9819 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08CA726C57B99006E9819 /* FollowerCell.swift */; };
 		15A08CAA26C57D57006E9819 /* BKAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08CA926C57D57006E9819 /* BKAvatarImageView.swift */; };
 		15A08CAC26C66CC7006E9819 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A08CAB26C66CC7006E9819 /* UIHelper.swift */; };
+		15A1665A26D4CAED000877DF /* BKRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1665926D4CAED000877DF /* BKRepoItemVC.swift */; };
+		15A1665C26D4CF4C000877DF /* BKFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1665B26D4CF4C000877DF /* BKFollowerItemVC.swift */; };
 		15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5726B9635400BF657A /* AppDelegate.swift */; };
 		15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5926B9635400BF657A /* SceneDelegate.swift */; };
 		15C6EA6126B9635700BF657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C6EA6026B9635700BF657A /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		15A08CA726C57B99006E9819 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		15A08CA926C57D57006E9819 /* BKAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKAvatarImageView.swift; sourceTree = "<group>"; };
 		15A08CAB26C66CC7006E9819 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		15A1665926D4CAED000877DF /* BKRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKRepoItemVC.swift; sourceTree = "<group>"; };
+		15A1665B26D4CF4C000877DF /* BKFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKFollowerItemVC.swift; sourceTree = "<group>"; };
 		15C6EA5426B9635400BF657A /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C6EA5726B9635400BF657A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C6EA5926B9635400BF657A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,9 +122,9 @@
 		152BBB3926CBE6420097E4E1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				15A1665E26D4CFF8000877DF /* ItemInfoVCs */,
 				15A08C9126C0A786006E9819 /* BKAlertVC.swift */,
 				156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */,
-				156A44EA26D4544400CAD514 /* BKItemInfoVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -135,7 +139,7 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
-		15A08C9726C11823006E9819 /* Controllers */ = {
+		15A08C9726C11823006E9819 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				15C6EA6B26BC76FB00BF657A /* SearchVC.swift */,
@@ -143,7 +147,7 @@
 				156A44E026D0454500CAD514 /* UserInfoVC.swift */,
 				15C6EA6D26BC775F00BF657A /* FavoritesListVC.swift */,
 			);
-			path = Controllers;
+			path = Screens;
 			sourceTree = "<group>";
 		};
 		15A08C9826C11885006E9819 /* Custom Views */ = {
@@ -214,6 +218,16 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		15A1665E26D4CFF8000877DF /* ItemInfoVCs */ = {
+			isa = PBXGroup;
+			children = (
+				156A44EA26D4544400CAD514 /* BKItemInfoVC.swift */,
+				15A1665926D4CAED000877DF /* BKRepoItemVC.swift */,
+				15A1665B26D4CF4C000877DF /* BKFollowerItemVC.swift */,
+			);
+			path = ItemInfoVCs;
+			sourceTree = "<group>";
+		};
 		15C6EA4B26B9635400BF657A = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +253,7 @@
 				15A08C9B26C16F58006E9819 /* Model */,
 				15A08C9926C118D0006E9819 /* Extensions */,
 				15A08C9826C11885006E9819 /* Custom Views */,
-				15A08C9726C11823006E9819 /* Controllers */,
+				15A08C9726C11823006E9819 /* Screens */,
 				15A08C9A26C1194A006E9819 /* Support */,
 			);
 			path = GithubFollowers;
@@ -316,11 +330,13 @@
 			files = (
 				15A08C9226C0A786006E9819 /* BKAlertVC.swift in Sources */,
 				156A44E326D1510200CAD514 /* BKUserInfoHeaderVC.swift in Sources */,
+				15A1665A26D4CAED000877DF /* BKRepoItemVC.swift in Sources */,
 				152BBB3C26CBE74D0097E4E1 /* BKEmptyStateView.swift in Sources */,
 				15A08C9026BFD545006E9819 /* BKBodyLabel.swift in Sources */,
 				15A08C9626C0F7AA006E9819 /* UIViewController+Ext.swift in Sources */,
 				15A08C9426C0AE5C006E9819 /* BKAlertContainerView.swift in Sources */,
 				15A08CAA26C57D57006E9819 /* BKAvatarImageView.swift in Sources */,
+				15A1665C26D4CF4C000877DF /* BKFollowerItemVC.swift in Sources */,
 				15C6EA7226BD3B4500BF657A /* BKTextField.swift in Sources */,
 				15C6EA7026BC908F00BF657A /* BKButton.swift in Sources */,
 				15A08C9F26C17072006E9819 /* User.swift in Sources */,
