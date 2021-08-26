@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: AnyObject {
+    func didTapGithubProfile(for user: User)
+    func didTapGetFollowers(for user: User)
+}
+
 class UserInfoVC: UIViewController {
 
     let headerView = UIView()
@@ -16,8 +21,9 @@ class UserInfoVC: UIViewController {
     
     var itemViews : [UIView] = []
     
-    
     var username : String!
+    
+    weak var delegate : FollowerListVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,10 +51,7 @@ class UserInfoVC: UIViewController {
             switch result {
             case .success(let user):
                 DispatchQueue.main.async {
-                    self.add(childVC: BKUserInfoHeaderVC(user: user), to: self.headerView)
-                    self.add(childVC: BKRepoItemVC(user: user), to: self.itemViewOne)
-                    self.add(childVC: BKFollowerItemVC(user: user), to: self.itemViewTwo)
-                    self.dateLabel.text = user.createdAt.convertToDisplayFormat()
+                    self.configureUIElements(with: user)
                 }
                 
             case .failure(let error):
@@ -56,6 +59,21 @@ class UserInfoVC: UIViewController {
             }
         }
         
+    }
+    
+    
+    func configureUIElements(with user: User) {
+        
+        let repoItemVC = BKRepoItemVC(user: user)
+        repoItemVC.delegate = self
+        
+        let followerItemVC = BKFollowerItemVC(user: user)
+        followerItemVC.delegate = self
+        
+        self.add(childVC: BKUserInfoHeaderVC(user: user), to: self.headerView)
+        self.add(childVC: repoItemVC, to: self.itemViewOne)
+        self.add(childVC: followerItemVC, to: self.itemViewTwo)
+        self.dateLabel.text = "Github since \(user.createdAt.convertToDisplayFormat())"
     }
     
     
@@ -108,5 +126,36 @@ class UserInfoVC: UIViewController {
     @objc func dismissVC() {
         dismiss(animated: true, completion: nil)
     }
+    
+}
+
+extension UserInfoVC: UserInfoVCDelegate {
+    
+    func didTapGithubProfile(for user: User) {
+        // Show safari view controller
+        
+        guard let url = URL(string: user.htmlUrl) else {
+            presentBKAlertOnMainThread(title: "Invalid url", message: "invalid", buttonTitle: "Okay")
+            return
+        }
+        
+        presentSafariVC(with: url)
+        
+    }
+    
+    func didTapGetFollowers(for user: User) {
+        // dismiss vc
+        
+        // Tell follower list screen the new user
+        
+        guard user.followers != 0 else {
+            presentBKAlertOnMainThread(title: "No followers", message: "This user has no followers", buttonTitle: "Ok")
+            return
+        }
+        
+        delegate.didRequestFollowers(for: user.login)
+        dismissVC()
+    }
+    
     
 }
