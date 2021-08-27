@@ -12,6 +12,7 @@ enum BKError: String, Error {
     case unableToComplete = "Unable to complete your request, check internet connection"
     case invalidResponse = "Invalid response from the server"
     case invalidData = "Data received from server is invalid"
-    
+    case unableToFavorite = "There was an error favoriting this user"
+    case alreadyInFavorites = "alreadyInFavorites"
     
 }
