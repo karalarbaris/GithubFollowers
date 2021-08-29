@@ -37,6 +37,8 @@ class BKTextField: UITextField {
         returnKeyType = .go
         
         placeholder = "Enter a username"
+        
+        clearButtonMode = .whileEditing
     }
     
 }

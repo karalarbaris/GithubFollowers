@@ -33,6 +33,7 @@
 		15A1666226D816F9000877DF /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1666126D816F9000877DF /* String+Ext.swift */; };
 		15A1666426D8DA8F000877DF /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1666326D8DA8F000877DF /* PersistenceManager.swift */; };
 		15A1666626DA21E4000877DF /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1666526DA21E4000877DF /* FavoriteCell.swift */; };
+		15A1666926DBCA4B000877DF /* BKTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A1666826DBCA4B000877DF /* BKTabBarController.swift */; };
 		15C6EA5826B9635400BF657A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5726B9635400BF657A /* AppDelegate.swift */; };
 		15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C6EA5926B9635400BF657A /* SceneDelegate.swift */; };
 		15C6EA6126B9635700BF657A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15C6EA6026B9635700BF657A /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		15A1666126D816F9000877DF /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		15A1666326D8DA8F000877DF /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		15A1666526DA21E4000877DF /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		15A1666826DBCA4B000877DF /* BKTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKTabBarController.swift; sourceTree = "<group>"; };
 		15C6EA5426B9635400BF657A /* GithubFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C6EA5726B9635400BF657A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15C6EA5926B9635400BF657A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 		15A08C9826C11885006E9819 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				15A1666726DBC9D8000877DF /* TabBarController */,
 				152BBB3A26CBE6770097E4E1 /* Labels */,
 				152BBB3926CBE6420097E4E1 /* ViewControllers */,
 				152BBB3826CBE63A0097E4E1 /* ImageViews */,
@@ -238,6 +241,14 @@
 				15A1665B26D4CF4C000877DF /* BKFollowerItemVC.swift */,
 			);
 			path = ItemInfoVCs;
+			sourceTree = "<group>";
+		};
+		15A1666726DBC9D8000877DF /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				15A1666826DBCA4B000877DF /* BKTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		15C6EA4B26B9635400BF657A = {
@@ -354,6 +365,7 @@
 				15A08C9F26C17072006E9819 /* User.swift in Sources */,
 				15A1666426D8DA8F000877DF /* PersistenceManager.swift in Sources */,
 				15A1666626DA21E4000877DF /* FavoriteCell.swift in Sources */,
+				15A1666926DBCA4B000877DF /* BKTabBarController.swift in Sources */,
 				15A08CA826C57B99006E9819 /* FollowerCell.swift in Sources */,
 				15C6EA6C26BC76FB00BF657A /* SearchVC.swift in Sources */,
 				156A44E126D0454500CAD514 /* UserInfoVC.swift in Sources */,
