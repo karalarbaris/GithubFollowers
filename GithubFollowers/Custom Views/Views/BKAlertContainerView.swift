@@ -20,7 +20,7 @@ class BKAlertContainerView: UIView {
     
     
     
-    func configure() {
+    private func configure() {
         translatesAutoresizingMaskIntoConstraints = false
         layer.cornerRadius = 16
         layer.borderWidth = 2
