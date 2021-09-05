@@ -46,7 +46,7 @@ class BKUserInfoHeaderVC: UIViewController {
         bioLabel.text = user.bio ?? "No bio available"
         bioLabel.numberOfLines = 3
         
-        locationImageView.image = UIImage(systemName: Constants.SFSymbols.location)
+        locationImageView.image = Constants.Images.location
         locationImageView.tintColor = .secondaryLabel
         
         

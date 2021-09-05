@@ -60,16 +60,16 @@ class BKItemInfoView: UIView {
     func set(itemInfoType: ItemInfoType, withCount count: Int) {
         switch itemInfoType {
         case .repos:
-            symbolImageView.image = UIImage(systemName: Constants.SFSymbols.repos)
+            symbolImageView.image = Constants.Images.repos
             titleLabel.text = "Public Repos"
         case .followers:
-            symbolImageView.image = UIImage(systemName: Constants.SFSymbols.followers)
+            symbolImageView.image = Constants.Images.followers
             titleLabel.text = "Public Gists"
         case .following:
-            symbolImageView.image = UIImage(systemName: Constants.SFSymbols.following)
+            symbolImageView.image = Constants.Images.following
             titleLabel.text = "Following"
         case .gists:
-            symbolImageView.image = UIImage(systemName: Constants.SFSymbols.gists)
+            symbolImageView.image = Constants.Images.gists
             titleLabel.text = "Followers"
         }
         countLabel.text = String(count)

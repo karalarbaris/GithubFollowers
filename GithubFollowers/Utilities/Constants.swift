@@ -18,6 +18,15 @@ struct Constants {
     
     enum Images {
         static let bkLogo = UIImage(named: "gh-logo")
+        static let placeHolder = UIImage(named: "avatar-placeholder")
+        static let emptyStateLogo = UIImage(named: "empty-state-logo")
+        
+        static let location = UIImage(systemName: Constants.SFSymbols.location)
+        static let repos = UIImage(systemName: Constants.SFSymbols.repos)
+        static let gists = UIImage(systemName: Constants.SFSymbols.gists)
+        static let followers = UIImage(systemName: Constants.SFSymbols.followers)
+        static let following = UIImage(systemName: Constants.SFSymbols.following)
+        
     }
     
     

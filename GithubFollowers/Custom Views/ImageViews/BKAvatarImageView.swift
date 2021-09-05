@@ -9,7 +9,7 @@ import UIKit
 
 class BKAvatarImageView: UIImageView {
 
-    let placeholderImage = UIImage(named: "avatar-placeholder")!
+    let placeholderImage = Constants.Images.placeHolder
     let cache = NetworkManager.shared.cache
     
     override init(frame: CGRect) {
