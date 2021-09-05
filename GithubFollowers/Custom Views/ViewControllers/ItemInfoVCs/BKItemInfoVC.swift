@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol BKItemInfoVCDelegate: AnyObject {
+    func didTapGithubProfile(for user: User)
+    func didTapGetFollowers(for user: User)
+}
+
 class BKItemInfoVC: UIViewController {
 
     let stackView = UIStackView()
@@ -15,7 +20,7 @@ class BKItemInfoVC: UIViewController {
     let actionButton = BKButton()
     
     var user: User!
-    weak var delegate: UserInfoVCDelegate!
+    weak var delegate: BKItemInfoVCDelegate!
     
     
     init(user: User) {

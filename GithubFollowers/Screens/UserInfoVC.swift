@@ -8,8 +8,7 @@
 import UIKit
 
 protocol UserInfoVCDelegate: AnyObject {
-    func didTapGithubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+    func didRequestFollowers(for username: String)
 }
 
 class UserInfoVC: BKDataloadingVC {
@@ -23,7 +22,7 @@ class UserInfoVC: BKDataloadingVC {
     
     var username : String!
     
-    weak var delegate : FollowerListVCDelegate!
+    weak var delegate : UserInfoVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,7 +93,7 @@ class UserInfoVC: BKDataloadingVC {
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180),
+            headerView.heightAnchor.constraint(equalToConstant: 210),
 
             itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
             itemViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
@@ -109,7 +108,7 @@ class UserInfoVC: BKDataloadingVC {
             dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding),
             dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 50)
             
         ])
     }
@@ -129,7 +128,7 @@ class UserInfoVC: BKDataloadingVC {
     
 }
 
-extension UserInfoVC: UserInfoVCDelegate {
+extension UserInfoVC: BKItemInfoVCDelegate {
     
     func didTapGithubProfile(for user: User) {
         // Show safari view controller
