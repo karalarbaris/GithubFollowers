@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		152BBB3C26CBE74D0097E4E1 /* BKEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */; };
+		1533A08326E55449004CD391 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533A08226E55449004CD391 /* UITableView+Ext.swift */; };
 		156A44E126D0454500CAD514 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E026D0454500CAD514 /* UserInfoVC.swift */; };
 		156A44E326D1510200CAD514 /* BKUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */; };
 		156A44E526D1527400CAD514 /* BKSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		152BBB3B26CBE74D0097E4E1 /* BKEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKEmptyStateView.swift; sourceTree = "<group>"; };
+		1533A08226E55449004CD391 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		156A44E026D0454500CAD514 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 		156A44E226D1510200CAD514 /* BKUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		156A44E426D1527400CAD514 /* BKSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BKSecondaryTitleLabel.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				15A08C9526C0F7AA006E9819 /* UIViewController+Ext.swift */,
 				15A1665F26D8166F000877DF /* Date+Ext.swift */,
 				15A1666126D816F9000877DF /* String+Ext.swift */,
+				1533A08226E55449004CD391 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				15A08CA226C2801F006E9819 /* NetworkManager.swift in Sources */,
 				156A44EB26D4544400CAD514 /* BKItemInfoVC.swift in Sources */,
 				15C6EA6E26BC775F00BF657A /* FavoritesListVC.swift in Sources */,
+				1533A08326E55449004CD391 /* UITableView+Ext.swift in Sources */,
 				15C6EA5A26B9635400BF657A /* SceneDelegate.swift in Sources */,
 				156A44E726D16B0000CAD514 /* Constants.swift in Sources */,
 			);
